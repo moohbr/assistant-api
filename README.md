@@ -71,7 +71,7 @@ Start the server
 #### Send a message
 
 ```http
-  put /conversation
+  POST /conversation
 ```
 
 | Parameter | Type     | Description                       |
