@@ -1,10 +1,15 @@
+import { createConversationController } from './useCases/CreateConversation/index';
 import { Router } from 'express';
-import AssistantController from './controllers/AssistantController';
+import { sendMessageController } from './useCases/SendMessage/index';
 
 const routes = Router();
 
-routes.get('/conversation', AssistantController.newSession);
-routes.post('/conversation', AssistantController.userInput);
+routes.post('/conversation', (request, response) => {
+    sendMessageController.handle(request, response);
+});
 
+routes.get('/conversation', (request, response) => {
+    createConversationController.handle(request, response);
+});
 
-export default routes;
+export { routes };

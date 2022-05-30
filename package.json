@@ -1,14 +1,16 @@
 {
   "name": "assistant-api",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "main": "server.ts",
   "license": "MIT",
   "author": {
     "name": "Matheus Araujo",
     "email": "matheus.araujo@kukac.com.br"
   },
   "scripts": {
-    "start:dev": "ts-node-dev src/index.ts --respawn --transpileOnly"
+    "start:dev": "ts-node-dev src/server.ts --respawn --transpileOnly --ignore-watch node_modules",
+    "build": "tsc -p tsconfig.prod.json",
+    "start": "ts-node src/server.ts"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.2",
