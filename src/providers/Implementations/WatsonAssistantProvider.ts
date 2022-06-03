@@ -53,6 +53,7 @@ export class WatsonAssistantProvider implements IWatsonAssistantProvider {
     await this.assistant
       .message({
         workspaceId: wAssistantConfig.workspace_id,
+        userId: request.query.user_id,
         input: { text: request.query.request_body.input.text }, // Text to send to Watson Assistant
       })
       .then((response) => {
