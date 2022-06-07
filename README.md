@@ -1,5 +1,5 @@
 
-# Assistant-API
+# Watson-Assistant-API
 
 Backend API to serve applications that consume IBM Watson Assistant, using SOLID standards.
 
