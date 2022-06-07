@@ -34,13 +34,13 @@ To run this project, you will need to add the following environment variables to
 Clone the project
 
 ```bash
-  git clone https://github.com/moohbr/assistant-api
+  git clone https://github.com/moohbr/watson-assistant-api
 ```
 
 Go to the project directory
 
 ```bash
-  cd assistant-api
+  cd watson-assistant-api
 ```
 
 Install dependencies
